@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    
+<link rel="stylesheet" 
+href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+crossorigin="anonymous">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3scc/4/w3.css">
+   
+  
      
     <style>
         * { margin: 0;
@@ -12,31 +20,75 @@
         box-sizing: border-box;}
 
         .box1 {
+            
             height: 450px;
-            border: 1px solid white;
-            background-color: rgb(233, 230, 230);
+            border: 1px solid rgb(209, 206, 206);
+            box-shadow: 0 0 5PX rgba(0 , 0, 0, 0.2);
+            background-color: rgba(177, 174, 174, 0.2);
             padding: 20px 20px;
             margin: 10px 10px;
+
         }
         .contactus {
+            position: relative;
+            padding-bottom: 10px;
             text-align: center;
             font-size: 30px;
-            color: blue;
-            margin: 0;
-
+            color: rgb(18, 150, 238);
          }
 
-         .icontext input {
-             width: 100%;
-             padding: 10px;
-             margin: 10px;
-             border: 1px solid rgb(223, 223, 223);
-             font-size: 20px;
-         }
-
-         .button:hover {
+         .icontext i { 
+             float: left;
+             font-size: 30px;
+             margin-top: 15px;
+             color: rgb(18, 150, 238);
              
          }
+         
+         .icontext input {  
+             float: left;
+             width: 1800px;
+             padding: 10px;
+             margin: 10px;
+             border: 1px solid rgb(199, 189, 189);
+             font-size: 16px;
+         }
+
+         .box1 button {
+             position: relative;
+             background-color: rgb(18, 150, 238);
+             padding: 10px 20px;
+             color: white;
+             border: none;
+             font-size: 16px;
+             left: 48%; top: 50%;
+             margin-top: 25px;
+         }
+
+         .box1 button:hover {
+             display: inline-block;
+             padding: 10px 20px;
+             border: none;
+             background-color: rgb(18, 150, 238);
+             color: black;
+             font-size: 16px;
+         }
+
+         .box1 button:hover {
+                cursor: pointer;
+                background-color: rgb(184, 181, 181);
+                color: black;
+            }
+
+            .box1 button:hover {
+                /* border 바깥라인 */
+                outline: none;
+            }
+
+            .box1 button:hover {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            }
 
     </style>
 </head>
@@ -44,15 +96,16 @@
 
     <div class="box1">
         <div class="icon">
-            <div input class="contactus"> <p>contact Us</p></div>
+            <div input class="contactus"> <p>Contact Us</p></div>
             <div class="icontext">
-             <div class="first name"><input type="text" name="text" value="First name" width="100%"></div>
-             <div class="Last Name"><input type="text" name="text" value="Last Name"></div>
-             <div class="first name"> <input type="text" name="text" value="Email"></div>
-             <div class="first name"><input type="text" name="text" value="Phone"></div>
-             <div class="first name"><input type="text" name="text" value="Message"></div>
-            </div>
-            <button>Send</button>
+             <div class="first name"><i class="fas fa-grin" ></i><input type="text" name="text" value="First name"></div>
+             <div class="Last Name"><i class="fas fa-grin-wink"></i><input type="text" name="text" value="Last Name"></div>
+             <div class="Email"><i class="far fa-address-card"></i><input type="text" name="text" value="Email"></div>
+             <div class="Phone"><i class="fas fa-phone"></i><input type="text" name="text" value="Phone"></div>
+             <div class="Message"><i class="far fa-comment-alt"></i><input type="text" name="text" value="Message"></div>
+             <div class="button" ><button>Send</button></div>
+            </div >
+ 
         </div>
     </div>
     
